@@ -36,7 +36,6 @@ import android.os.Looper;
 import android.os.RemoteException;
 import android.os.UserHandle;
 import android.view.View;
-import android.widget.Toast;
 
 import com.android.launcher3.BaseDraggingActivity;
 import com.android.launcher3.DeviceProfile;
@@ -362,9 +361,6 @@ public interface TaskShortcutFactory {
                 if (task != null) {
                     try {
                         iam.forceStopPackage(mPackageName, UserHandle.USER_CURRENT);
-                        Toast appKilled = Toast.makeText(mActivity, R.string.recents_app_killed,
-                            Toast.LENGTH_SHORT);
-                        appKilled.show();
                         ((RecentsView)mActivity.getOverviewPanel())
                               .dismissTask(mTaskView, true /* animate */, true /* removeTask */);
                     } catch (RemoteException e) { }

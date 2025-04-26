@@ -28,9 +28,8 @@
     <string name="recent_task_option_pin">Pin</string>
     <!-- Title for an option to enter freeform mode for a given app -->
     <string name="recent_task_option_freeform">Freeform</string>
-
+    <!-- Title for an option to force stop a given app -->
     <string name="recent_task_option_kill_app">Kill</string>
-    <string name="recents_app_killed">App killed</string>
 
     <!-- Recents: The empty recents string. [CHAR LIMIT=NONE] -->
     <string name="recents_empty_message">No recent items</string>
